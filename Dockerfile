@@ -1,6 +1,6 @@
 FROM alpine/git as clone
 WORKDIR /app
-RUN git clone https://github.com/pramila-git/sele-kub.git
+RUN git clone https://github.com/HarishAddala/sele-kube-firefox.git
 FROM maven:3.5-jdk-8-alpine as build
 WORKDIR /app
 COPY --from=clone /app/sele-kub/sele-kub /app
